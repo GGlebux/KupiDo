@@ -10,7 +10,7 @@ from ...schemas.unit import UnitCreate, UnitUpdate, UnitOut, UnitListOut
 router = APIRouter(tags=["units"])
 
 
-@router.get("/projects/{project_id}/units")
+@router.get("/projects/{project_id}/units", response_model=UnitListOut)
 async def list_project_units(
     project_id: UUID,
     page: int = 1,

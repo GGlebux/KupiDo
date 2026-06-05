@@ -29,7 +29,10 @@ services:
       CORS_ORIGINS: '["http://localhost", "http://localhost:80", "http://localhost:3000"]'
       MEDIA_DIR: /app/media
     volumes:
-      - media:/app/media
+      # Каталог фото лежит в репозитории (./backend/media) и коммитится в git:
+      # файлы едут с репо, записи в БД восстанавливаются из media/manifest.json
+      # при старте. Bind-mount не удаляется флагом `down -v`.
+      - ./backend/media:/app/media
     ports:
       - "8000:8000"
 
@@ -51,4 +54,3 @@ services:
 
 volumes:
   pgdata:
-  media:

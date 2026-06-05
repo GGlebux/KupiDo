@@ -7,6 +7,7 @@ import { ProjectCard } from '../components/project/ProjectCard'
 import { useAuth } from '../store/authContext'
 import { PhoneInput, RU_PHONE_RE } from '../components/PhoneInput'
 import type { Project, Review } from '../types'
+import heroImg from '../assets/hero.jpg'
 
 function useMortgage(price = 15000000, down = 3000000, years = 20, rate = 18.9) {
   const loan = price - down
@@ -90,25 +91,13 @@ export function HomePage({ onConsultClick }: { onConsultClick?: () => void }) {
                 </div>
               </div>
             </div>
-            <div className="hero__visual ph">
+            <div className="hero__visual" style={{ overflow: 'hidden' }}>
+              <img
+                src={heroImg}
+                alt="Фасад современного жилого комплекса"
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
+              />
               <span className="ph__tag">Фасад · ЖК «Полянка 18»</span>
-              <svg viewBox="0 0 400 500" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', mixBlendMode: 'multiply', opacity: .35 }} aria-hidden="true">
-                <g stroke="#14110D" strokeWidth=".7" fill="none">
-                  <rect x="40" y="80" width="320" height="380"/>
-                  <line x1="40" y1="160" x2="360" y2="160"/>
-                  <line x1="40" y1="240" x2="360" y2="240"/>
-                  <line x1="40" y1="320" x2="360" y2="320"/>
-                  <line x1="40" y1="400" x2="360" y2="400"/>
-                  <line x1="120" y1="80" x2="120" y2="460"/>
-                  <line x1="200" y1="80" x2="200" y2="460"/>
-                  <line x1="280" y1="80" x2="280" y2="460"/>
-                </g>
-                <g fill="#C9A961">
-                  <rect x="124" y="164" width="72" height="72" opacity=".3"/>
-                  <rect x="204" y="244" width="72" height="72" opacity=".25"/>
-                  <rect x="44" y="324" width="72" height="72" opacity=".18"/>
-                </g>
-              </svg>
               <div style={{ position: 'absolute', top: 24, right: 24, padding: '8px 12px', background: 'var(--paper)', borderRadius: 999, fontFamily: 'var(--f-mono)', fontSize: 11, letterSpacing: '.12em', textTransform: 'uppercase' }}>
                 Старт продаж · сегодня
               </div>

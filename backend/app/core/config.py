@@ -9,7 +9,11 @@ class Settings(BaseSettings):
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 1440
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
     CORS_ORIGINS: str = '["http://localhost:3000","http://localhost:5173","http://localhost:5174"]'
+    # Каталог фото = bind-mount на ./backend/media (коммитится в git).
+    # Файлы фото едут с репозиторием; записи photos в БД восстанавливаются
+    # из manifest.json при старте (см. app/crud/photo.py).
     MEDIA_DIR: str = "/app/media"
+    MANIFEST_NAME: str = "manifest.json"
     MAX_FILE_SIZE: int = 10 * 1024 * 1024  # 10 MB
 
     @property

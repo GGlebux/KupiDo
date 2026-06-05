@@ -50,7 +50,8 @@ export const reviewsApi = {
 export const photosApi = {
   listByProject: (id: string) => api.get(`/projects/${id}/photos`).then(r => r.data.data as Record<string, unknown>[]),
   listByUnit: (id: string) => api.get(`/units/${id}/photos`).then(r => r.data.data as Record<string, unknown>[]),
-  upload: (formData: FormData) => api.post('/photos', formData, { headers: { 'Content-Type': 'multipart/form-data' } }).then(r => r.data),
+  // Content-Type не задаём вручную: браузер сам проставит multipart/form-data с boundary.
+  upload: (formData: FormData) => api.post('/photos', formData).then(r => r.data),
   fromUrl: (d: object) => api.post('/photos/from-url', d).then(r => r.data),
   updateOrder: (id: string, order: number) => api.patch(`/photos/${id}/order`, { order }).then(r => r.data),
   delete: (id: string) => api.delete(`/photos/${id}`),

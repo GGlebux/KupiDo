@@ -26,10 +26,18 @@ export function UnitCard({ unit, onBook }: Props) {
   const fav = isUnitFav(unit.id)
   const fmt = (n?: number) => n ? new Intl.NumberFormat('ru-RU').format(n) + ' ₽' : '—'
   const label = unit.rooms ? `${unit.rooms}к` : TYPE_LABELS[unit.type || 'apartment'] || 'Объект'
+  const cover = unit.photos?.find(p => p.is_cover) ?? unit.photos?.[0]
 
   return (
     <Link to={`/units/${unit.id}`} className="card" style={{ padding: 20, background: 'var(--paper)' }}>
-      <div className="ph" style={{ aspectRatio: '1/1', background: 'var(--paper-2)', position: 'relative' }}>
+      <div className={cover ? '' : 'ph'} style={{ aspectRatio: '1/1', background: 'var(--paper-2)', position: 'relative', borderRadius: 'var(--r-md)', overflow: 'hidden' }}>
+        {cover && (
+          <img
+            src={cover.url}
+            alt={cover.caption || label}
+            style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+          />
+        )}
         <div style={{ position: 'absolute', top: 12, left: 12 }}>
           <span className={`tag ${STATUS_TAG[unit.status]}`}>
             <span className="tag__dot"></span>{STATUS_LABELS[unit.status]}
@@ -45,7 +53,7 @@ export function UnitCard({ unit, onBook }: Props) {
         >
           {fav ? '♥' : '♡'}
         </button>
-        <span className="ph__tag">{label} · {unit.area} м²</span>
+        {!cover && <span className="ph__tag">{label} · {unit.area} м²</span>}
       </div>
       <div className="mt-16 row-between">
         <div>

@@ -1,0 +1,473 @@
+{
+  "photos": [
+    {
+      "url": "/media/aab8a082-f79e-4e23-86b6-9ab368211b7d.jpg",
+      "project": "centralny",
+      "unit": null,
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/1465d854-078a-48ac-82f3-4991abb43275.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 130.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/18305023-bc41-48a4-9695-fbef125fe844.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 130.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/ebe77033-eadd-4317-97f4-ca7d16ec8795.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 130.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/4a67488e-6165-4893-824f-b524731a42c1.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 60.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/0f8a26eb-d6ac-48fd-b0f0-b853f5e57c2e.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 60.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/a5d8a15f-260c-4723-b9a8-0d77600a9264.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 40.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/07746dde-5c82-4529-9935-72c4fc74c2f4.jpg",
+      "project": "centralny",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 40.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/13f5b4ba-1ac4-4327-b4b4-80a1efee4491.jpg",
+      "project": "lesnaya-usadba",
+      "unit": null,
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/4d0df303-bc3c-4d00-be15-8bebeb9de4e1.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 140 м²",
+        "area": 140.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/6b1e624d-a5c9-4a1c-88b3-7c4fe5730840.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 140 м²",
+        "area": 140.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/40af0da9-d1c8-4edb-afa2-5276b0260855.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 140 м²",
+        "area": 140.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/20fe7908-8bc4-4937-a67e-a0c7cb9f1b6e.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 190 м²",
+        "area": 190.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/22b8e77f-f0f1-49af-a4c8-057bf6e08981.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 190 м²",
+        "area": 190.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/36fe127d-aad1-4763-b180-793cc4fa1e69.jpg",
+      "project": "lesnaya-usadba",
+      "unit": {
+        "title": "Дом 190 м²",
+        "area": 190.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/962bb831-3875-482f-b874-75595a8f20fe.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": null,
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/20de0e30-8a00-4f4b-8dda-7ad14c0be576.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 70.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/1fed389f-8471-4621-8241-8ac77c5f0e8c.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 70.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/ca7a728b-256f-4dfb-ad24-aa941e4c7934.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 44.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/2e39c28c-5021-4732-9a7c-7102dfe08711.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 44.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/bbb0443c-3032-448e-9022-1a4a75eb7562.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "Студия",
+        "area": 30.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/1cbc9be1-e31a-4990-98f8-26d75a6bd5bb.jpg",
+      "project": "nevskaya-rezidentsiya",
+      "unit": {
+        "title": "Студия",
+        "area": 30.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/0676f738-6973-405e-bcd7-ac1de8dfedca.jpg",
+      "project": "sosnovy-bereg",
+      "unit": null,
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/faaa499b-9d7c-415f-bb65-a6b1f7a3159c.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 165 м²",
+        "area": 165.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/828acca2-5058-46b1-b17e-e24b008f0c0c.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 165 м²",
+        "area": 165.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/40afbfb9-f248-4127-9dd1-dcd64650d636.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 165 м²",
+        "area": 165.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/9b304d80-6f40-45e2-9092-83ee841707d5.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 210 м²",
+        "area": 210.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/11854562-fc6a-4f3f-9ff3-fc8d1c26b7c9.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 210 м²",
+        "area": 210.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/543eca5c-ffac-4b67-b55a-78de22f02715.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 210 м²",
+        "area": 210.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/a5a79706-1a22-4605-92bc-ee9e21c5eb32.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 120 м²",
+        "area": 120.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/f6b7def2-0f6b-477c-ba20-64f3e965e03d.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 120 м²",
+        "area": 120.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/cf8eea3c-3962-47f9-bca0-64f056252777.jpg",
+      "project": "sosnovy-bereg",
+      "unit": {
+        "title": "Дом 120 м²",
+        "area": 120.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/9ec3adb1-9057-48ea-b4e9-5f9255640f70.jpg",
+      "project": "svetlogorsky",
+      "unit": null,
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/7d47ab7b-8ef1-4c68-8d10-58982cd919f6.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 64.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/de292ab4-183e-4183-bfc7-ccd977639de6.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "2-комнатная",
+        "area": 64.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/85a8d55c-73f2-4743-ac36-b63c7a47588d.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 42.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/0c3d8a20-0c94-43f0-b900-3b3db60f294d.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "1-комнатная",
+        "area": 42.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/b639d564-f004-4daf-b9cc-9fee5afc2a7c.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "3-комнатная",
+        "area": 88.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/62844d01-7171-4ed5-8369-474b0df0d27b.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "3-комнатная",
+        "area": 88.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/9f6d7e54-9bce-4929-a028-03f29bf85e85.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "Студия",
+        "area": 28.5
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/25efdf24-c918-416d-81e3-d18ec6943058.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "Студия",
+        "area": 28.5
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/b3983100-c7ba-4edf-83ea-102f41aacbcf.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 145.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/c54254cf-cb3e-43e9-8c5c-bfdbf01d2917.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 145.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    },
+    {
+      "url": "/media/3d75f694-dcfa-438b-9a6c-86c3de5853fc.jpg",
+      "project": "svetlogorsky",
+      "unit": {
+        "title": "Пентхаус",
+        "area": 145.0
+      },
+      "caption": null,
+      "order": 0,
+      "is_cover": false
+    }
+  ]
+}
