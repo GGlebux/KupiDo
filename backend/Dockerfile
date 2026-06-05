@@ -7,6 +7,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN mkdir -p /app/media && chmod +x /app/start.sh
+# Срезаем возможные CRLF-переносы (если репозиторий клонировали на Windows),
+# иначе шебанг start.sh ломается с "no such file or directory".
+RUN mkdir -p /app/media \
+    && sed -i 's/\r$//' /app/start.sh \
+    && chmod +x /app/start.sh
 
 CMD ["/app/start.sh"]
