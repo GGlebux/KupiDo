@@ -1,0 +1,65 @@
+# ============================================================
+#  КупиДон — .gitignore
+# ============================================================
+
+# ---------- Секреты / окружение ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Node (frontend / admin) ----------
+node_modules/
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.vite/
+.eslintcache
+
+# ---------- Python (backend) ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---------- Базы данных / загрузки ----------
+*.sqlite
+*.sqlite3
+*.db
+backend/media/*
+!backend/media/.gitkeep
+
+# ---------- Логи ----------
+*.log
+logs/
+
+# ---------- IDE / редакторы ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------- ОС ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Личные рабочие файлы (не для репозитория) ----------
+правки.txt
+ТЗ_строительная_система.md

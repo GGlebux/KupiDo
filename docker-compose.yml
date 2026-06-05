@@ -1,0 +1,54 @@
+name: kupido
+
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: kupido
+      POSTGRES_USER: kupido
+      POSTGRES_PASSWORD: kupidosecret
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kupido -d kupido"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+asyncpg://kupido:kupidosecret@db:5432/kupido
+      SECRET_KEY: change-this-in-production-32-chars-min
+      ACCESS_TOKEN_EXPIRE_MINUTES: 1440
+      CORS_ORIGINS: '["http://localhost", "http://localhost:80", "http://localhost:3000"]'
+      MEDIA_DIR: /app/media
+    volumes:
+      - media:/app/media
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+
+  admin:
+    build: ./admin
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8081:80"
+
+volumes:
+  pgdata:
+  media:
