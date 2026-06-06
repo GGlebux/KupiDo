@@ -89,6 +89,16 @@ export function ContactsPage() {
                     </div>
                   </div>
                 ))}
+
+                <div>
+                  <div className="label t-muted mb-12" style={{ fontSize: 11 }}>Мы в соцсетях</div>
+                  <div className="row" style={{ gap: 12, fontSize: 16 }}>
+                    <span>💬</span>
+                    <a href="https://vk.com/kupi_do" target="_blank" rel="noopener noreferrer" className="t-gold">
+                      ВКонтакте — vk.com/kupi_do
+                    </a>
+                  </div>
+                </div>
               </div>
 
               <div style={{ marginTop: 40 }}>
