@@ -1,10 +1,13 @@
 import { useState, useEffect, createContext, useContext } from 'react'
 import { authApi } from '../api'
 
+// Единая форма входа находится на сайте (тот же origin, путь /login).
+const SITE_LOGIN = '/login'
+const SITE_HOME = '/'
+
 interface AuthState {
   user: Record<string, unknown> | null
   loading: boolean
-  login: (email: string, password: string) => Promise<void>
   logout: () => void
 }
 
@@ -16,29 +19,25 @@ export function useAuthState(): AuthState {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const token = localStorage.getItem('admin_token')
-    if (!token) { setLoading(false); return }
+    const token = localStorage.getItem('access_token')
+    // Нет токена — отправляем на общую форму входа сайта.
+    if (!token) { window.location.href = SITE_LOGIN; return }
+
     authApi.me()
-      .then(u => setUser(u))
-      .catch(() => localStorage.removeItem('admin_token'))
-      .finally(() => setLoading(false))
+      .then(me => {
+        // В админку пускаем только администраторов; остальных — на вход сайта.
+        if (me.role !== 'admin') { window.location.href = SITE_LOGIN; return }
+        setUser(me)
+        setLoading(false)
+      })
+      .catch(() => { window.location.href = SITE_LOGIN })
   }, [])
 
-  const login = async (email: string, password: string) => {
-    const { access_token } = await authApi.login(email, password)
-    localStorage.setItem('admin_token', access_token)
-    const me = await authApi.me()
-    if (me.role !== 'admin') {
-      localStorage.removeItem('admin_token')
-      throw new Error('Недостаточно прав')
-    }
-    setUser(me)
-  }
-
+  // Выход общий с сайтом: чистим токен и возвращаемся на главную сайта.
   const logout = () => {
-    localStorage.removeItem('admin_token')
-    setUser(null)
+    localStorage.removeItem('access_token')
+    window.location.href = SITE_HOME
   }
 
-  return { user, loading, login, logout }
+  return { user, loading, logout }
 }

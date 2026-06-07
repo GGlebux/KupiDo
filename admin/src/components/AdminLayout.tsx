@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { useAdminAuth } from '../store/auth'
 
 const navItems = [
@@ -18,9 +18,9 @@ const navItems = [
 
 export function AdminLayout({ children }: { children: React.ReactNode }) {
   const { user, logout } = useAdminAuth()
-  const navigate = useNavigate()
 
-  const handleLogout = () => { logout(); navigate('/login') }
+  // logout сам уводит на сайт (общий выход).
+  const handleLogout = () => { logout() }
 
   return (
     <div className="admin-shell">

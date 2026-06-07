@@ -23,3 +23,7 @@
 **/values.dev.yaml
 LICENSE
 README.md
+# backend собирается из своего контекста (./backend); в образ сайта/админки не нужен
+backend
+docs
+**/dist

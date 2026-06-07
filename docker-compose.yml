@@ -36,21 +36,16 @@ services:
     ports:
       - "8000:8000"
 
+  # Сайт и админка собираются в один образ и раздаются одним nginx:
+  #   http://localhost/        — клиентский сайт
+  #   http://localhost/admin   — админ-панель (вход общий с сайтом)
   frontend:
-    build: ./frontend
+    build: .
     restart: unless-stopped
     depends_on:
       - backend
     ports:
       - "80:80"
-
-  admin:
-    build: ./admin
-    restart: unless-stopped
-    depends_on:
-      - backend
-    ports:
-      - "8081:80"
 
 volumes:
   pgdata:

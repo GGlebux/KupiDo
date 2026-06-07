@@ -1,7 +1,6 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthContext, useAuthState } from './store/auth'
 import { AdminLayout } from './components/AdminLayout'
-import { LoginPage } from './pages/LoginPage'
 import { DashboardPage } from './pages/DashboardPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { ProjectFormPage } from './pages/ProjectFormPage'
@@ -14,11 +13,6 @@ import { ClientDetailPage } from './pages/ClientDetailPage'
 import { ProjectViewPage } from './pages/ProjectViewPage'
 import { UnitViewPage } from './pages/UnitViewPage'
 import { ReviewsPage } from './pages/ReviewsPage'
-
-function PrivateRoute({ children }: { children: React.ReactNode }) {
-  const token = localStorage.getItem('admin_token')
-  return token ? <>{children}</> : <Navigate to="/login" replace />
-}
 
 function AdminRoutes() {
   return (
@@ -46,13 +40,14 @@ function AdminRoutes() {
 export default function App() {
   const auth = useAuthState()
 
+  // Пока проверяем токен/роль (или уходим на форму входа сайта) — ничего не рисуем.
+  if (auth.loading) return null
+
   return (
     <AuthContext.Provider value={auth}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/*" element={<PrivateRoute><AdminRoutes /></PrivateRoute>} />
-        </Routes>
+      {/* Админка живёт под префиксом /admin того же домена, что и сайт. */}
+      <BrowserRouter basename="/admin">
+        <AdminRoutes />
       </BrowserRouter>
     </AuthContext.Provider>
   )

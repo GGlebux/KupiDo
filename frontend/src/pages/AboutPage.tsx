@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import aboutImg from '../assets/about.jpg'
 
 const NUMBERS = [
   { value: '10+', label: 'лет на рынке' },
@@ -55,11 +56,12 @@ export function AboutPage() {
                 </p>
               </div>
             </div>
-            <div style={{ gridColumn: 'span 2', background: 'var(--surface-2)', borderRadius: 'var(--r-xl)', height: 360, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div style={{ textAlign: 'center', color: 'var(--muted)' }}>
-                <div style={{ fontSize: 64 }}>🏗️</div>
-                <p style={{ marginTop: 16, fontSize: 14 }}>Фото офиса / команды</p>
-              </div>
+            <div style={{ gridColumn: 'span 2' }}>
+              <img
+                src={aboutImg}
+                alt="Команда КупиДо обсуждает проект жилого комплекса"
+                style={{ width: '100%', height: 360, objectFit: 'cover', borderRadius: 'var(--r-xl)', display: 'block' }}
+              />
             </div>
           </div>
 
