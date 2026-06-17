@@ -1,0 +1,5 @@
+# Зависимости только для запуска unit-тестов (в продакшен-образ не входят).
+# Установка:  pip install -r requirements.txt -r requirements-dev.txt
+# Запуск:     pytest
+-r requirements.txt
+pytest==8.3.4
